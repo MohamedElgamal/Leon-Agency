@@ -270,6 +270,7 @@ body{
 .about .about-content .image{
     position: relative;
     width : 400px;
+    max-width: 400px;
     height: 350px;
 }
 
@@ -304,7 +305,7 @@ body{
 }
 
 .about .about-content .text{
-    padding-left: 70px;
+    padding-left: 150px;
 }
 
 @media (max-width : 767px){
@@ -315,5 +316,34 @@ body{
 
     .about .image::before , .about .image::after{
         display: none;
+    }
+
+}
+
+.about .about-content .text p:first-of-type{
+    padding : 15px;
+    padding-left : 0px;
+    font-weight: 800;
+    line-height : 1.5;
+}
+
+.about .about-content .text hr{
+    display: inline-block;
+    width : 50%;
+    border : 0.5px solid var(--main-color);
+}
+
+.about .about-content .text p:last-of-type{
+    color : #777;
+    font-weight: light;
+    line-height: 1.5;
+    padding : 15px;
+    padding-left : 0px;
+}
+
+@media (max-width : 767px){
+    .about .about-content .text{
+        margin-top : 25px;
+        text-align: center;
     }
 }
